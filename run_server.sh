@@ -1,1 +1,1 @@
-php -S localhost:8000 server.php
+php -S localhost:3000 server.php

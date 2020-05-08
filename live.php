@@ -61,7 +61,8 @@ try {
 
   $split = preg_split("[" . $broadcastId . "]", $streamUploadUrl);
 
-  $streamUrl = $split[0];
+  // $streamUrl = $split[0];
+  $streamUrl = "rtmps://live-upload.instagram.com:443/rtmp/";
   $streamKey = $broadcastId . $split[1];
 
   logM("================================ Stream URL ================================\n" . $streamUrl . "\n================================ Stream URL ================================");

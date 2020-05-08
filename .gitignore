@@ -3,3 +3,4 @@ composer.lock
 request
 response
 live_response
+config.php

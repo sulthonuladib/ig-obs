@@ -14,8 +14,8 @@ use InstagramAPI\Instagram;
 use InstagramAPI\Request\Live;
 
 require_once __DIR__ . '/config.php';
-$debug = true;
-$truncatedDebug = true;
+$debug = false;
+$truncatedDebug = false;
 
 if (IG_USERNAME == "USERNAME" || IG_PASS == "PASSWORD") {
   logM("Default Username and Passwords have not been changed! Exiting...");

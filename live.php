@@ -55,14 +55,14 @@ try {
   $ig->live->start($broadcastId);
   $streamUploadUrl = preg_replace(
     '#^rtmps://([^/]+?):443/#ui',
-    'rtmp://\1:80/',
+    'rtmps://\1:443/',
     $stream->getUploadUrl()
   );
 
   $split = preg_split("[" . $broadcastId . "]", $streamUploadUrl);
 
-  // $streamUrl = $split[0];
-  $streamUrl = "rtmps://live-upload.instagram.com:443/rtmp/";
+  $streamUrl = $split[0];
+  // $streamUrl = "rtmps://live-upload.instagram.com:443/rtmp/";
   $streamKey = $broadcastId . $split[1];
 
   logM("================================ Stream URL ================================\n" . $streamUrl . "\n================================ Stream URL ================================");

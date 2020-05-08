@@ -5,6 +5,9 @@ a very2 bad documentation XD
 - a computer installed php or on Windows u can use XAMPP or WAMPP, WSL work too
 - OBS App or another Stream App that support RTMP
 
+## Authentication ##
+- enter your username and password on config.php file
+
 ## How to use ##
 - execute ``` php -S localhost:3000 server.php ```
 - then execute ``` php live.php  ```
